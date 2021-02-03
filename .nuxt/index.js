@@ -15,7 +15,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 import nuxt_plugin_plugin_018c6234 from 'nuxt_plugin_plugin_018c6234' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_pluginclient_2bcdb762 from 'nuxt_plugin_pluginclient_2bcdb762' // Source: ./content/plugin.client.js (mode: 'client')
 import nuxt_plugin_pluginserver_dcf1ae2c from 'nuxt_plugin_pluginserver_dcf1ae2c' // Source: ./content/plugin.server.js (mode: 'server')
-import nuxt_plugin_vueinstantsearch_9a9113e8 from 'nuxt_plugin_vueinstantsearch_9a9113e8' // Source: ../plugins/vue-instantsearch (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -185,10 +184,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.server && typeof nuxt_plugin_pluginserver_dcf1ae2c === 'function') {
     await nuxt_plugin_pluginserver_dcf1ae2c(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_vueinstantsearch_9a9113e8 === 'function') {
-    await nuxt_plugin_vueinstantsearch_9a9113e8(app.context, inject)
   }
 
   // Lock enablePreview in context
