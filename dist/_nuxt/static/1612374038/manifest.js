@@ -1,1 +1,0 @@
-__NUXT_JSONP__("manifest.js", {routes:["\u002F","\u002Fwebsocket-events","\u002Fexpressive-validators","\u002Fvalidation-error"]})
