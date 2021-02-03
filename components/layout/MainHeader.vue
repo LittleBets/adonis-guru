@@ -21,7 +21,7 @@
       </svg>
     </button>
 
-    <div class="hidden md:flex px-4">
+    <div class="hidden md:flex px-3">
       <!-- Swap out the logo with one of your own -->
       <nuxt-link
         to="/"

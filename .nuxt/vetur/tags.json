@@ -82,5 +82,11 @@
   },
   "LazyMobileMenu": {
     "description": "Auto imported from components/layout/MobileMenu.vue"
+  },
+  "NextPrev": {
+    "description": "Auto imported from components/layout/NextPrev.vue"
+  },
+  "LazyNextPrev": {
+    "description": "Auto imported from components/layout/NextPrev.vue"
   }
 }

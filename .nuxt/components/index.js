@@ -12,6 +12,7 @@ export { default as DocsContents } from '../../components/layout/DocsContents.vu
 export { default as MainFooter } from '../../components/layout/MainFooter.vue'
 export { default as MainHeader } from '../../components/layout/MainHeader.vue'
 export { default as MobileMenu } from '../../components/layout/MobileMenu.vue'
+export { default as NextPrev } from '../../components/layout/NextPrev.vue'
 
 export const LazyCopyCode = import('../../components/global/CopyCode.vue' /* webpackChunkName: "components/global/CopyCode" */).then(c => c.default || c)
 export const LazyYouTube = import('../../components/global/YouTube.vue' /* webpackChunkName: "components/global/YouTube" */).then(c => c.default || c)
@@ -27,3 +28,4 @@ export const LazyDocsContents = import('../../components/layout/DocsContents.vue
 export const LazyMainFooter = import('../../components/layout/MainFooter.vue' /* webpackChunkName: "components/layout/MainFooter" */).then(c => c.default || c)
 export const LazyMainHeader = import('../../components/layout/MainHeader.vue' /* webpackChunkName: "components/layout/MainHeader" */).then(c => c.default || c)
 export const LazyMobileMenu = import('../../components/layout/MobileMenu.vue' /* webpackChunkName: "components/layout/MobileMenu" */).then(c => c.default || c)
+export const LazyNextPrev = import('../../components/layout/NextPrev.vue' /* webpackChunkName: "components/layout/NextPrev" */).then(c => c.default || c)

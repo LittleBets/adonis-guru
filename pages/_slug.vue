@@ -12,8 +12,28 @@
     />
     <NuxtContent
       :document="doc"
-      class="prose"
+      class="prose max-w-none"
     />
+    <div class="font-medium text-blue-600 mt-16 w-full sm:justify-between mx-auto flex">
+      <NuxtLink
+        v-if="prev"
+        :to="{ name: 'slug', params: { slug: prev.slug } }"
+        class="hover:text-blue-500"
+      >
+        <-- {{ prev.title }}
+      </NuxtLink>
+      <div
+        v-else
+        class="w-2"
+      />
+      <NuxtLink
+        v-if="next"
+        :to="{ name: 'slug', params: { slug: next.slug } }"
+        class="hover:text-blue-500"
+      >
+        {{ next.title }} -->
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
@@ -21,12 +41,25 @@
 import Vue from 'vue'
 import CopyCode from "~/components/global/CopyCode";
 import AuthorAvatar from "~/components/AuthorAvatar";
+
 export default {
   components: {AuthorAvatar},
   async asyncData({ $content, params }) {
     const currentPage = params.slug
     const doc = await $content(`snippets`, currentPage).fetch()
-    return { doc, currentPage }
+    const [prev, next] = await $content('snippets')
+            .only(['title', 'slug'])
+            .sortBy('createdAt', 'asc')
+            .surround(params.slug)
+            .fetch()
+
+    return {
+      prev,
+      next,
+      doc,
+      currentPage
+    }
+
   },
   head() {
     return {

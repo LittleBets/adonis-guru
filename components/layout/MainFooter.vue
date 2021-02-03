@@ -108,7 +108,7 @@
         </a>
       </div>
       <div class="mt-8 md:mt-0 md:order-1">
-        <p class="text-center text-base text-gray-700">
+        <p class="text-center text-sm text-gray-700">
           &copy; 2021 Little Bets, LLC. All rights reserved.
         </p>
       </div>

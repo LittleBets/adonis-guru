@@ -1,5 +1,5 @@
 ---
-title: "Websocket Events"
+title: "Validation error"
 description: 'Adonis has some websocket events.'
 image: ''
 tags: 'snippets'
