@@ -1,3 +1,4 @@
+<!--
 <template>
   <ais-instant-search
     :search-client="searchClient"
@@ -116,3 +117,4 @@ export default {
 
 
 </script>
+-->

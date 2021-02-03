@@ -1,2 +1,9 @@
 .page-enter-active, .page-leave-active { transition: opacity .3s; }
 .page-enter, .page-leave-active { opacity: 0; }
+
+.nuxt-content-highlight {
+    @apply relative;
+}
+.copy {
+    @apply absolute right-0 bottom-0 mr-10 mt-10 leading-none px-2 text-gray-900 py-3 text-sm uppercase rounded-md font-semibold;
+}

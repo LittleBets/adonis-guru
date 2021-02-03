@@ -18,6 +18,15 @@ module.exports = {
           'code::after': {
             content: '""',
           },
+          h2: {
+            color: '#DD6B20',
+          },
+          h3: {
+            color: '#DD6B20',
+          },
+          h4: {
+            color: '#DD6B20',
+          },
         },
       },
     },

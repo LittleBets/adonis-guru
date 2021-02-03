@@ -1,0 +1,14 @@
+[
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/adammiedema/adonis-guru/pages/index.vue",
+    "chunkName": "pages/index"
+  },
+  {
+    "name": "slug",
+    "path": "/:slug",
+    "component": "/Users/adammiedema/adonis-guru/pages/_slug.vue",
+    "chunkName": "pages/_slug"
+  }
+]

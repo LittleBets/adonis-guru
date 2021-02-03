@@ -12,16 +12,20 @@
     "@nuxt/content": "^1.11.1",
     "@tailwindcss/typography": "^0.2.0",
     "algoliasearch": "^4.8.3",
+    "clipboard": "^2.0.6",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "nuxt-content-algolia": "^0.2.0",
     "remove-markdown": "^0.3.0",
     "tailwindcss-aspect-ratio": "^3.0.0",
-    "vue-instantsearch": "^3.4.3",
-    "v-click-outside": "^3.1.2"
+    "v-click-outside": "^3.1.2",
+    "vue-instantsearch": "^3.4.3"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-vue": "^7.5.0",
     "tailwindcss-responsive-embed": "^1.0.0"
   }
 }
