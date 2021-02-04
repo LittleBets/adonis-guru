@@ -1,30 +1,13 @@
 <template>
   <div class="w-full">
     <GuruTile
-      title="Expressive validators"
-      :tags="['snippet']"
-      doc="expressive-validators"
+      v-for="tile in tiles"
+      :title="tile.title"
+      :tags="[tile.tags]"
+      :doc="tile.slug"
     >
-      informative short description here
+      {{ tile.description }}
     </GuruTile>
-
-    <GuruTile
-      title="Websocket events"
-      :tags="['snippet']"
-      doc="websocket-events"
-    >
-      informative short description here
-    </GuruTile>
-
-    <GuruTile
-      title="Validation error"
-      :tags="['snippet']"
-      doc="validation-error"
-    >
-      informative short description here
-    </GuruTile>
-
-
     <NewsletterSignup />
   </div>
 </template>
@@ -33,9 +16,16 @@
 import NewsletterSignup from "~/components/NewsletterSignup";
 import GuruTile from "~/components/GuruTile";
 export default {
-  components: {GuruTile, NewsletterSignup}
+  components: {GuruTile, NewsletterSignup},
+  async asyncData({ $content }) {
+    const tiles = await $content('snippets')
+            .only(['title', 'slug', 'description', 'tags'])
+            .sortBy('createdAt', 'desc')
+            .limit(10)
+            .fetch()
+
+    return { tiles }
+  },
 }
 </script>
 
-<style>
-</style>

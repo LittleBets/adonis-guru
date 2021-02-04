@@ -11,9 +11,13 @@
       <p class="text-base font-medium text-gray-700 group-hover:text-gray-900">
         {{ author.name }}
       </p>
-      <p class="text-xs font-medium text-blue-500 group-hover:text-gray-700">
+      <a
+        :href="`https://twitter.com/${author.handle}`"
+        target="_blank"
+        class="text-xs font-medium text-blue-500 hover:text-blue-600"
+      >
         @{{ author.handle }}
-      </p>
+      </a>
     </div>
   </div>
 </template>

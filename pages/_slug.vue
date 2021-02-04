@@ -59,7 +59,6 @@ export default {
       doc,
       currentPage
     }
-
   },
   head() {
     return {

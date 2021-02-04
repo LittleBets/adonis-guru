@@ -2,7 +2,7 @@
 title: "Websocket Events"
 description: 'Adonis has some websocket events.'
 image: ''
-tags: 'snippets'
+tags: 'snippet'
 author: 'Ashok'
 ---
 

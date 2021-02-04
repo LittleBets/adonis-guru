@@ -2,7 +2,7 @@
 title: "Expressive Validators"
 description: 'Adonis has some expressive validators.'
 image: ''
-tags: 'snippets'
+tags: 'snippet'
 author: 'Ashok'
 ---
 
@@ -29,4 +29,3 @@ public async updatePost({ request, auth: { user }, params: { id } }) {
 }
 ```
 Some information here
-

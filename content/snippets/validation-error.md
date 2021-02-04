@@ -2,7 +2,7 @@
 title: "Validation error"
 description: 'Adonis has some websocket events.'
 image: ''
-tags: 'snippets'
+tags: 'snippet'
 author: 'Ashok'
 ---
 
