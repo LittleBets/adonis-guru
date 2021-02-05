@@ -4,6 +4,7 @@ import { normalizeURL, decode } from '@nuxt/ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _539b3dd0 = () => interopDefault(import('../pages/tag/_tag.vue' /* webpackChunkName: "pages/tag/_tag" */))
 const _27544c62 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _259dab1a = () => interopDefault(import('../pages/_slug.vue' /* webpackChunkName: "pages/_slug" */))
 
@@ -24,6 +25,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/tag/:tag?",
+    component: _539b3dd0,
+    name: "tag-tag"
+  }, {
     path: "/",
     component: _27544c62,
     name: "index"

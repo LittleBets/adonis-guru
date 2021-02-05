@@ -1,5 +1,12 @@
 [
   {
+    "name": "tag-tag",
+    "path": "/tag/:tag?",
+    "component": "/Users/adammiedema/adonis-guru/pages/tag/_tag.vue",
+    "chunkName": "pages/tag/_tag",
+    "_name": "_539b3dd0"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/adammiedema/adonis-guru/pages/index.vue",

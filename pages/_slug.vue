@@ -3,9 +3,13 @@
     <h1 class="text-3xl font-semibold text-orange-600 pb-2 mt-6">
       {{ doc.title }}
     </h1>
-    <p class="text-gray-600 text-xs">
-      #{{ doc.tags }}
-    </p>
+    <nuxt-link
+      v-for="tag in tagsList(doc.tags)"
+      :to="`tag/${tag.trim()}`"
+      class="text-xs text-gray-600 hover:text-blue-500 pr-3"
+    >
+      #{{ tag.trim() }}
+    </nuxt-link>
     <AuthorAvatar
       :name="doc.author"
       class="pb-6 pt-4"
@@ -52,7 +56,6 @@ export default {
             .sortBy('createdAt', 'asc')
             .surround(params.slug)
             .fetch()
-
     return {
       prev,
       next,
@@ -87,6 +90,11 @@ export default {
         block.appendChild(component.$el)
       }
     }, 100)
+  },
+  methods: {
+    tagsList (tags) {
+      return tags.split(",")
+    }
   }
 
 }

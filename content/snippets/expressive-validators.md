@@ -2,7 +2,7 @@
 title: "Expressive Validators"
 description: 'Adonis has some expressive validators.'
 image: ''
-tags: 'snippet'
+tags: 'fact, snippet'
 author: 'Ashok'
 ---
 

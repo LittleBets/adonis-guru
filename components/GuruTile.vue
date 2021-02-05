@@ -1,15 +1,21 @@
 <template>
   <div>
     <nuxt-link
-      :to="doc"
+      :to="`/${doc}`"
       class="py-3 px-3 grid items-center hover:bg-orange-100 rounded-lg mt-6"
     >
       <div
-        v-for="tag in tags"
+        v-if="tags"
+        class="flex"
       >
-        <span class="text-xs text-gray-600">
-          #{{ tag }}
-        </span>
+        <nuxt-link
+          v-for="tag in tagsList(tags)"
+
+          :to="`tag/${tag.trim()}`"
+          class="text-xs text-gray-600 hover:text-blue-500 pr-3"
+        >
+          #{{ tag.trim() }}
+        </nuxt-link>
       </div>
       <div class=" block">
         <p class="text-xl font-semibold text-orange-600">
@@ -33,9 +39,15 @@
 <script>
 export default {
   props: {
-    tags: {type: Array},
+    tags: {type: String},
     title: {type: String, required: true},
     doc: {type: String, required:true}
+  },
+  methods: {
+    tagsList (tags) {
+      console.log(tags)
+      return tags.split(",")
+    }
   }
 }
 </script>
