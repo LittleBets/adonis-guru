@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-3xl mx-auto">
-    <transition
+    <!--    <transition
       enter-active-class="transition-opacity ease-linear duration-300"
       enter-class="opacity-0"
       enter-to-class="opacity-100"
@@ -12,7 +12,7 @@
         v-show="showMobileMenu"
         @closeMobileMenu="showMobileMenu = false"
       />
-    </transition>
+    </transition>-->
     <MainHeader
       v-show="!showMobileMenu"
       @showMobileMenu="showMobileMenu = true"

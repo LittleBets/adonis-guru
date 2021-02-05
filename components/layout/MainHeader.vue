@@ -1,7 +1,7 @@
 <template>
-  <div class="z-10 flex flex-shrink-0 h-16 w-full max-w-6xl items-center justify-between bg-white sm:px-3">
+  <div class="z-10 flex flex-shrink-0 h-16 w-full max-w-6xl items-center justify-between bg-white px-3">
     <!-- Mobile menu button -->
-    <button
+    <!--    <button
       class="md:hidden items-center px-4"
       @click="showMobileMenu"
     >
@@ -19,13 +19,13 @@
           d="M4 6h16M4 12h16M4 18h16"
         />
       </svg>
-    </button>
+    </button>-->
 
-    <div class="hidden md:flex px-3">
+    <div class="flex px-3">
       <!-- Swap out the logo with one of your own -->
       <nuxt-link
         to="/"
-        class="md:text-2xl font-extrabold tracking-tight sm:text-xl text-gray-800"
+        class="font-extrabold tracking-tight text-2xl text-gray-800"
       >
         Adonis Guru
       </nuxt-link>
